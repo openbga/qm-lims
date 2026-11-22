@@ -1,5 +1,6 @@
 ---
 date: 2026-11-22
+pr: 70
 type: fixed
 impact: low
 title: Page help corrected on four pages
