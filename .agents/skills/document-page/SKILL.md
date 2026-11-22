@@ -50,10 +50,10 @@ Front matter (plain `key: value`, lists comma separated):
 | `templates` | recommended | Template names (verified loadable) |
 | `models` | recommended | `app_label.Model` for models shown or changed (verified to exist) |
 | `reviewed` | yes | ISO date the doc was last checked against the code |
-| `summary` | with the friendly layer | One line, at most 240 characters: what the reader can find or do here |
+| `summary` | yes | One line, at most 240 characters: what the reader can find or do here |
 
-Body, friendly layer (being rolled out; write it for every new or rewritten doc). All or none
-with `summary`, and before the reference sections:
+Body, friendly layer (required in every doc). All or none with `summary`, and before the
+reference sections:
 
 - **`## Common tasks`**: 2–5 tasks. Each is a `### Title` (a verb phrase, at most 80
   characters) and a numbered list of 1–4 steps (at most 200 characters each). Wrap every exact
@@ -64,8 +64,8 @@ with `summary`, and before the reference sections:
 Read [references/friendly-layer.md](references/friendly-layer.md) before writing them: tone,
 what to include, worked examples and the per-page checklist. The parser in `pagedocs/docs.py`
 refuses a file that breaks a limit, the order or the all-or-none rule, and an unpaired `[[`.
-`FRIENDLY_LAYER_REQUIRED` in `pagedocs/coverage.py` turns the layer from optional to required
-when the roll-out ends.
+`FRIENDLY_LAYER_REQUIRED` in `pagedocs/coverage.py` is set: `pagedocs/tests/test_coverage.py`
+fails a doc without the layer.
 
 Body, reference: these `##` sections in this order. Write `None.` rather than dropping a section.
 With the friendly layer they render collapsed under "All fields and actions" with a filter.

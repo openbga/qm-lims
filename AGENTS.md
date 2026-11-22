@@ -2,7 +2,7 @@
 
 The product name is **OpenBGA QM LIMS** and the repository is [openbga/qm-lims](https://github.com/openbga/qm-lims), under the **OpenBGA** organization. Use this name in the application, presentation website and documentation. The support notice is: "Are you looking for support? Contact [bgasoft.com](https://bgasoft.com)."
 
-Read `docs/product.md`, `docs/architecture.md`, `docs/ui-standards.md` and relevant source/tests. Contributor setup, checks and pull-request expectations are in `CONTRIBUTING.md`; report vulnerabilities as described in `SECURITY.md`. Regulatory applicability, sources and caveats are in `docs/regulations.md`. Keep documentation for intent and constraints, not a duplicate implementation description.
+Read `docs/product.md`, `docs/architecture.md`, `docs/ui-standards.md` and relevant source/tests. Contributor setup, checks and pull-request expectations are in `CONTRIBUTING.md`; report vulnerabilities as described in `SECURITY.md`. Regulatory applicability, sources and caveats are in `docs/regulations.md`. Keep documentation for intent and constraints, not a duplicate implementation description. When documentation and code disagree, the code is right. Follow the code and correct or delete the documentation. That holds for descriptions of what the system does; a requirement or rule the code does not meet is work to do or a defect to report, not documentation to delete.
 
 One manufacturing QC system serves pharma/biotech, supplements, food, chemicals and devices through approved configuration. One organization/site per deployment is the initial assumption. Synthetic data only. Do not claim regulatory compliance or import environmental domain rules. Reference repositories are read-only.
 
