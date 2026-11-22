@@ -4,7 +4,7 @@ urls: validation:use_list
 views: validation.views.use_list
 templates: validation/list.html, ops/list.html
 models: validation.UseAcceptance
-reviewed: 2026-11-17
+reviewed: 2026-11-22
 summary: The laboratory's records of its intended use of the system. See which record is accepted and whether the configuration or release changed since, or record a new one.
 ---
 
@@ -50,7 +50,7 @@ List the records of the laboratory's intended use of the system and show whether
 |---|---|---|---|
 | **New intended use** | Always for Quality | Quality | Opens the record form |
 | Record number (UA-n) | Every row | Any viewer | Opens the record |
-| Column headings **Title**, **Recorded**, **Accepted** | Always | Any viewer | Sort the whole list |
+| Column headings **Recorded**, **Accepted** | Always | Any viewer | Sort the whole list |
 
 ## Fields
 
@@ -60,7 +60,7 @@ List the records of the laboratory's intended use of the system and show whether
 | Status | `UseAcceptance.state` | Choice | No | **All**, **Awaiting acceptance**, **Accepted**, **Superseded**, **Withdrawn** |
 | Record | — | UA-n | — | Record number, linked to the record |
 | State | `UseAcceptance.state` | Label | — | As in Status |
-| Recorded by | `UseAcceptance.recorded_by` | User | — | Full name and username when a name is held |
+| Recorded by | `UseAcceptance.recorded_by` | User | — | Full name, else the username |
 | Recorded / Accepted | `UseAcceptance.recorded_at`, `.accepted_at` | Date | — | Empty Accepted until signed |
 | Changes since acceptance | — | Text | — | Filled only on the accepted row: for example "2 changes to the configuration and another release", or "None" |
 

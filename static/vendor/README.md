@@ -25,4 +25,5 @@ this table and `THIRD_PARTY_NOTICES.md`.
 
 The Popper version is the one Bootstrap 5.3.8 declares (`@popperjs/core` `^2.11.8`; 2.11.8 is the
 latest 2.x release). The presentation website (`website/`) copies the Bootstrap CSS (with its licence header) and
-`static/css/app.css` at build time and adds no other third-party files.
+`static/css/app.css` with the Archivo font it loads at build time; `website/icons.svg` holds
+Bootstrap Icons symbols, published with `static/img/icons.LICENSE`.

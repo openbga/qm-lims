@@ -4,7 +4,7 @@ urls: validation:rehearsal_accept
 views: validation.views.rehearsal_accept
 templates: ops/sign.html
 models: validation.Rehearsal, core.ElectronicSignature, core.AuditEvent
-reviewed: 2026-11-17
+reviewed: 2026-11-22
 summary: Sign a rehearsal record as a true account of the rehearsal, with the outcome it states and the evidence attached. Only a quality person who did not record it can sign.
 ---
 
@@ -36,7 +36,7 @@ Accept a rehearsal record with meaning **accepted**: you confirm it as a true ac
 ## Layout
 
 - Breadcrumbs (Validation, Rehearsals, RH-n, Accept) and a signing dialog (a plain card without JavaScript): RH-n and revision, the meaning, the facts, signer, the link **Enroll or change your signature PIN**, the form, **Cancel** and **Sign and accept**. Opening the page never signs.
-- Facts: Rehearsal of, Title, Performed, Release before (upgrade), Release, Environment, Procedure, Acceptance criteria, Outcome, Observations, Issues and actions, Recorded by, Evidence files (name, description and SHA-256 of each).
+- Facts: Rehearsal of, Title, Performed, Release before (upgrade), Release, Environment, Procedure, Acceptance criteria, Outcome, Observations, Issues and actions, Recorded by, Evidence files (name, description and the first 12 characters of the SHA-256 of each).
 
 ## Actions
 

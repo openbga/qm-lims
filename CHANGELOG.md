@@ -4,7 +4,7 @@
 
 What changed in OpenBGA QM LIMS, newest first: grouped by month, then ranked by impact. The application shows the same list under **What's new**. Each change is a file in [changelog.d/](changelog.d/); entry types follow [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). The project is pre-1.0 and does not yet promise a stable interface.
 
-## November 2026 (2026-11-10 to 2026-11-19)
+## November 2026 (2026-11-10 to 2026-11-22)
 
 ### High impact
 
@@ -898,6 +898,10 @@ What changed in OpenBGA QM LIMS, newest first: grouped by month, then ranked by 
   > The shared menu is filtered by the account's current explicit roles; read-only laboratory destinations stay available. The audit link and the audit route use the same set of reader roles. Server authorization and scientific action permissions are unchanged. No migration and no dependency change.
 
 ### Low impact
+
+- **Fixed**: Page help corrected on four pages · Page help · 2026-11-22
+
+  The page help of **Add to QC batch**, **Intended use**, **Accept intended use** and **Accept rehearsal** now matches what those pages show: the wording of one refusal, which columns sort the list, and how people's names and file checksums appear.
 
 - **Fixed**: Certificate list sorts by status correctly · Certificates · 2026-11-17 · [#46](https://github.com/openbga/qm-lims/pull/46)
 

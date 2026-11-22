@@ -4,7 +4,7 @@ urls: validation:use_accept
 views: validation.views.use_accept
 templates: ops/sign.html
 models: validation.UseAcceptance, core.ElectronicSignature, core.AuditEvent
-reviewed: 2026-11-17
+reviewed: 2026-11-22
 summary: Sign the acceptance of the system for the intended use described. Your signature freezes the supported assays, the approved configuration in force and the running release.
 ---
 
@@ -36,7 +36,7 @@ Accept the system for the intended use described, with meaning **accepted**. The
 ## Layout
 
 - Breadcrumbs (Validation, UA-n, Accept) and a signing dialog (a plain card without JavaScript): UA-n and revision, the meaning, the facts, signer, the link **Enroll or change your signature PIN**, the form, **Cancel** and **Sign and accept**. Opening the page never signs.
-- Facts: Title, Intended use, Outside the intended use, Supported assays ("title (code vN)"), Methods in force that are not supported assays, Process owner, System owner, Other responsibilities, Validation report, Validation report link, Known issues and conditions, Approved configuration in force (listed by kind as "code vN"), Running release, Supersedes, Recorded by.
+- Facts: Title, Intended use, Outside the intended use, Supported assays ("title code vN"), Methods in force that are not supported assays, Process owner, System owner, Other responsibilities, Validation report, Validation report link, Known issues and conditions, Approved configuration in force (listed by kind as "code vN"), Running release, Supersedes, Recorded by.
 
 ## Actions
 

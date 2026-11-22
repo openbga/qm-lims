@@ -72,7 +72,7 @@ Code that reimplements one of them is a finding. Fix in place:
 | 16 | Page type: one primary (last), ≤3 secondaries + More, identifier row links, list states, breadcrumbs only where due, `page_title` from the view | `docs/ui-standards.md` |
 | 17 | Must-see QC facts (status, holds, OOS, open investigations, awaiting review, amendments) in `page_meta` or a notice; text or glyph with every colour | Move them up; add the cue |
 | 18 | Panels own spacing; no utilities inside panel bodies; no panel in a panel | `panel_section`, `table=True` |
-| 19 | Signing only on sign pages through `signature_card` and the signature dialog, never the form dialog; an unavailable action explained before any PIN is asked | `core/form_surfaces.py` lists data-entry pages only |
+| 19 | Signing only on sign pages through `signature_card`, opened in the form dialog over the record like every form page; an unavailable action explained before any PIN is asked | List the sign page in `core/form_surfaces.py` (`FORM_SURFACES`) |
 | 20 | Wording: sentence case, `New`/`Record`/`Change`/`Correct`/`Cancel`, one term per concept, same words as sidebar and title | Rename |
 
 ## 4. Tests, traceability, docs
